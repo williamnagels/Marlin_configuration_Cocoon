@@ -155,7 +155,7 @@
 //#define SINGLENOZZLE
 
 /**
- * Průša MK2 Single Nozzle Multi-Material Multiplexer, and variants.
+ * Průša MK2 Single Nozzle Multi-Materiall Multiplexer, and variants.
  *
  * This device allows one stepper driver on a control board to drive
  * two to eight stepper motors, one at a time, in a manner suitable
@@ -880,8 +880,8 @@
 // @section machine
 
 // The size of the print bed
-#define X_BED_SIZE 213
-#define Y_BED_SIZE 213
+#define X_BED_SIZE 203
+#define Y_BED_SIZE 203
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
 #define X_MIN_POS -25
@@ -1025,10 +1025,10 @@
   #define GRID_MAX_POINTS_Y GRID_MAX_POINTS_X
 
   // Set the boundaries for probing (where the probe can reach).
-  //#define LEFT_PROBE_BED_POSITION MIN_PROBE_EDGE
-  //#define RIGHT_PROBE_BED_POSITION (X_BED_SIZE - MIN_PROBE_EDGE)
-  //#define FRONT_PROBE_BED_POSITION MIN_PROBE_EDGE
-  //#define BACK_PROBE_BED_POSITION (Y_BED_SIZE - MIN_PROBE_EDGE)
+  #define LEFT_PROBE_BED_POSITION 70
+  //#define RIGHT_PROBE_BED_POSITION (X_BED_SIZE - 10)
+  //#define FRONT_PROBE_BED_POSITION 10
+  //#define BACK_PROBE_BED_POSITION (Y_BED_SIZE - 10)
 
   // Probe along the Y axis, advancing X after each column
   //#define PROBE_Y_FIRST
